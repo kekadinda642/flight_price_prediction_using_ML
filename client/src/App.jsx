@@ -28,8 +28,8 @@ function App() {
     setLoading(true);
     setError('');
     try {
-      const response = await axios.post('https://flight-price-prediction-using-ml-ak9a.onrender.com/predict', formData);  //  this is for localhost
-      // const response = await axios.post('https://flight-price-prediction-project-nh2s.onrender.com/predict', formData);
+      //const response = await axios.post('http://127.0.0.1:5000/predict', formData);  //  this is for localhost
+      const response = await axios.post('https://flight-price-prediction-using-ml-7u3p.onrender.com/predict', formData);
       setPrediction(response.data.price);
     } catch (err) {
       console.error("Error:", err);
@@ -147,7 +147,7 @@ function App() {
         )}
       </div>
 
-      <div className="signature-badge">Developed By Keka</div>
+      <div className="signature-badge">Built by Keka</div>
     </>
   );
 }
