@@ -28,7 +28,7 @@ function App() {
     setLoading(true);
     setError('');
     try {
-      const response = await axios.post('https://flight-price-prediction-using-ml-xo2z.onrender.com/predict', formData);  //  this is for localhost
+      const response = await axios.post('https://flight-price-prediction-using-ml-ak9a.onrender.com/predict', formData);  //  this is for localhost
       // const response = await axios.post('https://flight-price-prediction-project-nh2s.onrender.com/predict', formData);
       setPrediction(response.data.price);
     } catch (err) {
